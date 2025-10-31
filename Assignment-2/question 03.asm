@@ -19,7 +19,14 @@ main PROC
 	mov sum,0
 	mov ebx,0
 	mov esi,0
+
+
+
+	
 	l1:
+
+		cmp ebx,count ; Compare index with count
+		jge exitt
 
 		cmp numarr[esi],0
 		jg addd
@@ -28,8 +35,7 @@ main PROC
 		cont:
 		add esi,TYPE numarr
 		inc ebx
-		cmp ebx,count ; Compare index with count
-		jge exitt
+		
 		jmp l1 
 
 addd:
