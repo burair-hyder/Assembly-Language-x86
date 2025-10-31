@@ -13,6 +13,11 @@ INCLUDE Irvine32.inc
 
 main PROC
 
+	mov eax,op2
+	cmp op1,eax
+	jle whileloop
+	jmp exitt
+
 	whileloop:
 
 		mov eax,x
