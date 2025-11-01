@@ -3,7 +3,7 @@ INCLUDE irvine32.inc
 
 .data
 
-	array WORD 10,60,20,33,72,89,45,65,72,184
+	array WORD 10,60,20,33,72,89,45,65,72,18
 	sample WORD 50
 	arraysize WORD LENGTHOF array
 	sum WORD 0
